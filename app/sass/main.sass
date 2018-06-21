@@ -40,10 +40,75 @@ b, strong
 
 
 // custom classes
-a, a:hover, a:active, a,focus, a:visited
-	color: white
+
+// reset-links
+.reset-link
+	color: inherit
+	&:hover,&:active,&:focus
+		color: inherit
+
+// button outline reset
+button
+	outline: none
+	&:hover
+		outline: none
+	&:focus
+		outline: none
+	&:active
+		outline: none
+	&:visited
+		outline: none
+
+// @include transition(.2s)
+
+.button
+	cursor: pointer
+	&--red
+		background-color: $attention
+		color: white
+		border: 1px solid transparent
+		@include transition(.2s)
+		&:hover
+			background-color: white
+			border-color: $attention
+			color: $attention
+
+	&--blue
+		background-color: $accent
+		color: white
+		border: 1px solid transparent
+		@include transition(.2s)
+		&:hover
+			background-color: white
+			border-color: $accent
+			color: $accent
 
 
+
+// breadcrumbs
+.breadcrumb
+	padding: 0
+	font-size: 14px
+	background-color: transparent
+
+	&__link
+		color: $text
+
+	&-item /* not BAM cause its bootstrap class */
+		&:before
+			padding: 0!important
+
+		&.active
+			color: $attention
+			font-weight: 700
+			text-decoration: underline
+
+.cabinet-heading
+	margin-bottom: 28px
+	font-size: 24px
+	border-bottom: 4px solid lighten($text, 30%)
+	span
+		color: $attention
 
 
 // .nav
@@ -63,6 +128,7 @@ a, a:hover, a:active, a,focus, a:visited
 
 	&__link
 		height: 100%
+		color: inherit
 		font-size: 18px
 		text-transform: uppercase
 		font-weight: 500
@@ -91,8 +157,6 @@ a, a:hover, a:active, a,focus, a:visited
 
 .nav-dropdown
 	width: 100%
-	// @include transition(.2s)
-
 
 	&__button
 		&:hover
@@ -103,6 +167,7 @@ a, a:hover, a:active, a,focus, a:visited
 		display: none
 		position: absolute
 		width: 100%
+		min-width: 300px
 		left: 0
 		right: 0
 		padding-left: 15px
@@ -110,6 +175,7 @@ a, a:hover, a:active, a,focus, a:visited
 		// background-clip: content-box
 		background-color: $accent
 		box-shadow: 0px 2px 8px fade-out($text, .4)
+		z-index: 4
 
 		&--form
 			min-width: 300px
@@ -133,6 +199,144 @@ a, a:hover, a:active, a,focus, a:visited
 		cursor: pointer
 		&:hover
 			color: $dark-blue
+
+// .header-page
+.header-page
+	margin-top: 20px
+	margin-bottom: 50px
+
+	&__text
+		margin-bottom: 0
+
+	&__link
+		color: $accent
+		text-decoration: underline
+
+// cabinet-content
+.cabinet-content
+
+// .user-settings
+.user-settings
+	&__ballance
+		margin-bottom: 38px
+		color: $success
+		font-size: 24px
+		font-weight: 700
+
+	&__row
+		border-bottom: 1px solid darken(white, 8%)
+		&:last-of-type
+			border: none
+
+	&__label
+		margin-bottom: 0
+
+	&__button
+		width: auto
+		background-color: transparent
+		border: none
+		color: $accent
+		cursor: pointer
+		&:hover
+			color: $dark-blue
+
+
+	&__input
+		background-color: darken(white, 4%)
+		border-radius: 2px
+
+// .user-readings
+.user-readings
+	position: relative;
+	width: 100%;
+	outline: 0;
+	&__container
+
+	&__item
+		margin-bottom: 4px
+
+	&__button
+		position: relative;
+		display: block
+		width: 100%
+		margin-bottom: 0
+		padding-top: 15px
+		padding-bottom: 15px
+		background-color: $accent
+		border-radius: 4px
+		font-size: 24px
+		color: white
+		cursor: pointer
+		@include transition(.2s)
+
+		&:hover
+			background-color: darken($accent, 10%)
+			color: white
+			text-decoration: none
+
+		&.active
+			background-color: $dark-blue
+			color: white
+
+	&__content
+		display: none
+		border: 2px solid $dark-blue
+		border-bottom-right-radius: 4px
+		border-bottom-left-radius: 4px
+
+.user-readings__container .user-readings__item.open .user-readings__button
+	background-color: $dark-blue
+	color: white
+	border-bottom-right-radius: 0
+	border-bottom-left-radius: 0
+
+// .callback
+.callback
+	margin-bottom: 64px
+	&__description
+	&__img
+		max-height: 120px
+	&__text
+		line-height: 20px
+	&__form
+	&__textarea
+		margin-bottom: 12px
+		background-color: darken(white, 4%)
+		border-radius: 2px
+
+// .footer-page
+.footer-page
+	height: 130px
+	background-color: $accent
+	background-image: url("../img/nav_pattern.png")
+	color: white
+	&__wrapper
+		height: 130px
+	&__item
+	&__text
+		margin-bottom: 12px
+		line-height: 20px
+		span
+			display: block
+		&--uppercase
+			font-weight: light
+			text-transform: uppercase
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
