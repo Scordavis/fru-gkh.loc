@@ -68,7 +68,6 @@
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 				<div class="col-5">
@@ -223,9 +222,6 @@
 			</div>
 		</div>
 	</div>
-
-
 	<script src="js/scripts.min.js"></script>
-
 </body>
 </html>
