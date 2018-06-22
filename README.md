@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
-
 	<title>Відомості про абонента</title>
 	<meta name="description" content="">
-
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
 	<!-- Template Basic Images Start -->
 	<!-- <meta property="og:image" content="path/to/image.jpg"> -->
 	<!-- Template Basic Images End -->
-
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
-
 	<link rel="stylesheet" href="css/main.min.css">
-
 </head>
-
 <body>
 	<!-- .nav -->
 	<div class="col-12 nav">
 		<div class="container nav__wrapper">
 			<div class="row no-gutters align-items-center nav__content">
+<<<<<<< HEAD
 				<div class="col-7 col-lg-6 col-md-4">
 					<div class="row no-gutters align-items-center">
 						<!-- nav__item -->
 						<div class="col text-lg-center text-md-right nav__item">
 							<a href="#" class="d-md-block reset-link nav__link"><i class="d-md-block d-lg-none d-xl-inline fa fa-home nav__icon"></i><span class="d-md-none d-lg-inline">Головна</span></a>
+=======
+				<!-- site nav buttons-->
+				<div class="order-1 order-md-1 d-none d-md-block col-7 col-xl-7 col-lg-6 col-md-4 nav__link-wrapper">
+					<div class="row no-gutters align-items-center">
+						<!-- nav__item -->
+						<div class="col text-lg-center text-md-right nav__item">
+							<a href="#" class="d-md-block reset-link nav__link"><i class="d-md-block d-lg-none d-xl-inline fa fa-home nav__icon"></i><span class="d-none d-lg-inline d-xl-inline">Головна</span></a>
+>>>>>>> development
 						</div>
 						<!-- nav__item dropdown list-->
 						<div class="col text-lg-center text-md-right nav__item">
 							<div class="nav-dropdown js-dropdown">
+<<<<<<< HEAD
 								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-md-block d-lg-none d-xl-inline fa fa-file-text-o nav__icon"></i><span class="d-md-none d-lg-inline">Відомості</span></a>
+=======
+								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-md-block d-lg-none d-xl-inline fa fa-file-text-o nav__icon"></i><span class="d-none d-lg-inline d-xl-inline">Відомості</span></a>
+>>>>>>> development
 								<div class="nav-dropdown__content">
 									<a href="#" class="reset-link nav-dropdown__item">Відомості для нарахування</a>
 									<a href="#" class="reset-link nav-dropdown__item">Статистика платежів та споживання</a>
@@ -48,7 +52,11 @@
 						<!-- nav__item dropdown list-->
 						<div class="col text-lg-center text-md-right nav__item">
 							<div class="nav-dropdown js-dropdown">
+<<<<<<< HEAD
 								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-md-block d-lg-none d-xl-inline fa fa-book nav__icon"></i><span class="d-md-none d-lg-inline">Документи</span></a>
+=======
+								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-md-block d-lg-none d-xl-inline fa fa-book nav__icon"></i><span class="d-none d-lg-inline d-xl-inline">Документи</span></a>
+>>>>>>> development
 								<div class="nav-dropdown__content">
 									<a href="#" class="reset-link nav-dropdown__item">Оформити договір</a>
 									<a href="#" class="reset-link nav-dropdown__item">Акт звіряння</a>
@@ -58,7 +66,11 @@
 						<!-- nav__item dropdown list-->
 						<div class="col text-lg-center text-md-right nav__item">
 							<div class="reset-link nav-dropdown js-dropdown">
+<<<<<<< HEAD
 								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-md-block d-lg-none d-xl-inline fa fa-pencil-square-o nav__icon"></i><span class="d-md-none d-lg-inline">Послуги</span></a>
+=======
+								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-md-block d-lg-none d-xl-inline fa fa-pencil-square-o nav__icon"></i><span class="d-none d-lg-inline d-xl-inline">Послуги</span></a>
+>>>>>>> development
 								<div class="nav-dropdown__content">
 									<a href="#" class="reset-link nav-dropdown__item">Визвати майстра</a>
 									<a href="#" class="reset-link nav-dropdown__item">Перевірити контролера</a>
@@ -70,10 +82,69 @@
 						</div>
 					</div>
 				</div>
+<<<<<<< HEAD
 				<div class="col-5 col-lg-6 col-md-8">
+=======
+				<!-- mobile navigation-->
+				<div class="col-8 p-2 nav__mobile js-navbar">
+>>>>>>> development
+					<div class="row no-gutters align-items-center">
+						<!-- nav__item -->
+						<div class="col-12 text-lg-center text-md-right nav__item">
+							<a href="#" class="d-md-block reset-link nav__link"><i class="d-md-block d-lg-none d-xl-inline fa fa-home nav__icon"></i><span class="">Головна</span></a>
+						</div>
+						<!-- nav__item dropdown list-->
+						<div class="col text-lg-center text-md-right nav__item">
+							<div class="nav-dropdown js-dropdown">
+								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-md-block d-lg-none d-xl-inline fa fa-file-text-o nav__icon"></i><span class="">Відомості</span></a>
+								<div class="nav-dropdown__content">
+									<a href="#" class="reset-link nav-dropdown__item">Відомості для нарахування</a>
+									<a href="#" class="reset-link nav-dropdown__item">Статистика платежів та споживання</a>
+								</div>
+							</div>
+						</div>
+						<!-- nav__item dropdown list-->
+						<div class="col-12 text-lg-center text-md-right nav__item">
+							<div class="nav-dropdown js-dropdown">
+								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-md-block d-lg-none d-xl-inline fa fa-book nav__icon"></i><span class="">Документи</span></a>
+								<div class="nav-dropdown__content">
+									<a href="#" class="reset-link nav-dropdown__item">Оформити договір</a>
+									<a href="#" class="reset-link nav-dropdown__item">Акт звіряння</a>
+								</div>
+							</div>
+						</div>
+						<!-- nav__item dropdown list-->
+						<div class="col-12 text-lg-center text-md-right nav__item">
+							<div class="reset-link nav-dropdown js-dropdown">
+								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-md-block d-lg-none d-xl-inline fa fa-pencil-square-o nav__icon"></i><span class="">Послуги</span></a>
+								<div class="nav-dropdown__content">
+									<a href="#" class="reset-link nav-dropdown__item">Визвати майстра</a>
+									<a href="#" class="reset-link nav-dropdown__item">Перевірити контролера</a>
+									<a href="#" class="reset-link nav-dropdown__item">Замовити перерахунок</a>
+									<a href="#" class="reset-link nav-dropdown__item">Замовити повірку лічильника</a>
+									<a href="#" class="reset-link nav-dropdown__item">Замовити опломбування лічильника</a>
+								</div>
+							</div>
+						</div>
+						<!-- nav__item dropdown list form-->
+						<div class="order-1 col-12">
+							<div class="nav-dropdown js-dropdown-form">
+								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="fa fa-search nav__icon"></i>Пошук</a>
+								<div class="nav-dropdown__content nav-dropdown__content--form">
+									<form class="form-inline nav-dropdown__item">
+										<input class="nav-dropdown__form form-control" type="search" placeholder="Введіть запит" aria-label="Введіть запит">
+										<button class="mx-auto mt-1 nav-dropdown__form-button" type="submit">знайти</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- tel, name of organization and search -->
+				<div class="order-2 col-8 col-xl-5 col-lg-6 col-md-8 col-sm-8">
 					<div class="row no-gutters align-items-center">
 						<!-- nav__item dropdown list form-->
-						<div class="col-2">
+						<div class="order-1 col-2 d-none d-md-block">
 							<div class="text-center nav-dropdown js-dropdown-form">
 								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="fa fa-search nav__icon"></i></a>
 								<div class="nav-dropdown__content nav-dropdown__content--form">
@@ -85,14 +156,22 @@
 							</div>
 						</div>
 						<!-- nav__item -->
-						<div class="col-6 text-right nav__item">
-							<p class="nav__text">КП "Гопри-Водоканал"<span>пн-пт 8:00-17:00</span></p>
+						<div class="order-2 col-xs-12 col-sm-12 col-md-6 text-right nav__item">
+							<p class="nav__text">КП "Гопри-Водоканал"<span class="d-none d-sm-block">пн-пт 8:00-17:00</span></p>
 						</div>
-						<div class="col-4 nav__item">
-							<p class="text-right nav__text nav__text--tel"><i class="fa fa-phone-square nav__icon"></i>+38(095)123-45-87</p>
-							<p class="text-right nav__text nav__text--tel">+38(095)876-54-32</p>
+						<div class="order-3 col-xs-12 col-sm-12 col-md-4 nav__item">
+							<p class="text-left text-md-right nav__text nav__text--tel"><i class="d-none d-md-inline fa fa-phone-square nav__icon"></i>+38(095)123-45-87</p>
+							<p class="text-left text-md-right nav__text nav__text--tel">+38(095)876-54-32</p>
 						</div>
 					</div>
+				</div>
+				<!-- hamburger button -->
+				<div class="col-4 order-3 d-block d-md-none col-sm-4 text-right">
+					<button class="hamburger"  id="hamburger">
+						<span class="mx-auto my-1 hamburger__bar"></span>
+						<span class="mx-auto my-1 hamburger__bar"></span>
+						<span class="mx-auto my-1 hamburger__bar"></span>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -115,7 +194,11 @@
 				<p class="header-page__text">Сьогоднi середа, 12.06.2018</p>
 			</div>
 			<!-- user name and logout-->
+<<<<<<< HEAD
 			<div class="order-lg-3 order-md-2 col-lg-4 col-xl-4 col-md-6 header-page__item text-right">
+=======
+			<div class="order-lg-3 order-md-2 col-lg-4 col-xl-4 col-md-6 header-page__item text-center text-sm-center text-md-right">
+>>>>>>> development
 				<p class="header-page__text">Перемодлавський Вячеслав Олександрович</p>
 				<a href="#" class="header-page__link">вийти</a>
 			</div>
