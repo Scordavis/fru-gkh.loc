@@ -126,7 +126,7 @@
 			<!-- user-settings -->
 			<div class="col-5 user-settings">
 				<h2 class="cabinet-heading">Відомості <span>про абонента</span></h2>
-				<p class="text-center user-settings__ballance">20.35 грн.</p>
+				<p class="text-center user-settings__ballance green">20.35 грн.</p>
 				<form action="">
 					<div class="row no-gutters pt-1 pb-2 user-settings__row">
 						<label class="col-10 px-2 user-settings__label" for="user-pib">Уповноважений власник (ПІБ)</label>
@@ -162,21 +162,177 @@
 					<div class="user-readings__item">
 						<p class="text-center user-readings__button">Електрика</p>
 						<div class="user-readings__content">
-							<p>Accordion content 1</p>
+							<!-- user-readings__wrapper - костыли для отбивки паддинга бутстраповского класса row-->
+							<div class="mx-auto user-readings__wrapper">
+								<!-- table row -->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Діючий тариф</p></div>
+									<div class="col-6 user-readings__value"><p class="user-readings__text">стартовий</p></div>
+								</div>
+								<!-- table row -->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Сплачено в минулому місяці</p></div>
+									<div class="col-6 user-readings__value"><p class="user-readings__text">320 грн. 74 коп.</p></div>
+								</div>
+								<!-- table row -->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Сплачено в поточному місяці</p></div>
+									<div class="col-6 user-readings__value"><p class="user-readings__text">457 грн. 28 коп.</p></div>
+								</div>
+								<!-- table row -->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Останні показники лічильника</p></div>
+									<div class="col-6 user-readings__value"><p class="user-readings__text">45293</p></div>
+								</div>
+								<!-- table row input-->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Внести показання лічильника</p></div>
+									<div class="col-6 user-readings__value">
+										<div class="input-group">
+											<input type="text" class="form-control user-readings__input" placeholder="внесіть останні показання" aria-label="внесіть останні показання" aria-describedby="user-readings">
+											<div class="input-group-append">
+												<button class="btn btn-outline-secondary button--blue button--rounded" type="button">внести</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- table row button-->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Сформувати рахунок</p></div>
+									<div class="col-6 user-readings__value">
+										<div class="input-group">
+											<button class="w-100 btn btn-outline-secondary button--blue button--rounded" type="button">сформувати</button>
+										</div>
+									</div>
+								</div>
+								<!-- table row ballance-->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Баланс</p></div>
+									<div class="col-6 user-readings__value"><p class="user-readings__text green">20.35 грн.</p></div>
+								</div>
+								<!-- table row payments-->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="offset-3 col-6 user-readings__query"><button class="w-100 btn btn-outline-secondary button--red button--rounded" type="button">оплатити комунальні послуги</button></div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<!-- .user-readings__item -->
 					<div class="user-readings__item">
 						<p class="text-center user-readings__button">Водопост./водовідв.</p>
 						<div class="user-readings__content">
-							<p>Accordion content 1</p>
+							<!-- user-readings__wrapper - костыли для отбивки паддинга бутстраповского класса row-->
+							<div class="mx-auto user-readings__wrapper">
+								<!-- table row -->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Діючий тариф</p></div>
+									<div class="col-6 user-readings__value"><p class="user-readings__text">корпоративний</p></div>
+								</div>
+								<!-- table row -->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Сплачено в минулому місяці</p></div>
+									<div class="col-6 user-readings__value"><p class="user-readings__text">320 грн. 74 коп.</p></div>
+								</div>
+								<!-- table row -->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Сплачено в поточному місяці</p></div>
+									<div class="col-6 user-readings__value"><p class="user-readings__text">120 654 грн. 28 коп.</p></div>
+								</div>
+								<!-- table row -->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Останні показники лічильника</p></div>
+									<div class="col-6 user-readings__value"><p class="user-readings__text">123293</p></div>
+								</div>
+								<!-- table row input-->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Внести показання лічильника</p></div>
+									<div class="col-6 user-readings__value">
+										<div class="input-group">
+											<input type="text" class="form-control user-readings__input" placeholder="внесіть останні показання" aria-label="внесіть останні показання" aria-describedby="user-readings">
+											<div class="input-group-append">
+												<button class="btn btn-outline-secondary button--blue button--rounded" type="button">внести</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- table row button-->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Сформувати рахунок</p></div>
+									<div class="col-6 user-readings__value">
+										<div class="input-group">
+											<button class="w-100 btn btn-outline-secondary button--blue button--rounded" type="button">сформувати</button>
+										</div>
+									</div>
+								</div>
+								<!-- table row ballance-->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Баланс</p></div>
+									<div class="col-6 user-readings__value"><p class="user-readings__text green">20.35 грн.</p></div>
+								</div>
+								<!-- table row payments-->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="offset-3 col-6 user-readings__query"><button class="w-100 btn btn-outline-secondary button--red button--rounded" type="button">оплатити комунальні послуги</button></div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<!-- .user-readings__item -->
 					<div class="user-readings__item">
 						<p class="text-center user-readings__button">Газопостачання</p>
 						<div class="user-readings__content">
-							<p>Accordion content 1</p>
+							<!-- user-readings__wrapper - костыли для отбивки паддинга бутстраповского класса row-->
+							<div class="mx-auto user-readings__wrapper">
+								<!-- table row -->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Діючий тариф</p></div>
+									<div class="col-6 user-readings__value"><p class="user-readings__text">сімейний</p></div>
+								</div>
+								<!-- table row -->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Сплачено в минулому місяці</p></div>
+									<div class="col-6 user-readings__value"><p class="user-readings__text">10 грн. 74 коп.</p></div>
+								</div>
+								<!-- table row -->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Сплачено в поточному місяці</p></div>
+									<div class="col-6 user-readings__value"><p class="user-readings__text">62 грн. 28 коп.</p></div>
+								</div>
+								<!-- table row -->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Останні показники лічильника</p></div>
+									<div class="col-6 user-readings__value"><p class="user-readings__text">411193</p></div>
+								</div>
+								<!-- table row input-->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Внести показання лічильника</p></div>
+									<div class="col-6 user-readings__value">
+										<div class="input-group">
+											<input type="text" class="form-control user-readings__input" placeholder="внесіть останні показання" aria-label="внесіть останні показання" aria-describedby="user-readings">
+											<div class="input-group-append">
+												<button class="btn btn-outline-secondary button--blue button--rounded" type="button">внести</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- table row button-->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Сформувати рахунок</p></div>
+									<div class="col-6 user-readings__value">
+										<div class="input-group">
+											<button class="w-100 btn btn-outline-secondary button--blue button--rounded" type="button">сформувати</button>
+										</div>
+									</div>
+								</div>
+								<!-- table row ballance-->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="col-6 user-readings__query"><p class="user-readings__text">Баланс</p></div>
+									<div class="col-6 user-readings__value"><p class="user-readings__text green">20.35 грн.</p></div>
+								</div>
+								<!-- table row payments-->
+								<div class="row no-gutters pt-2 px-2 user-readings__row">
+									<div class="offset-3 col-6 user-readings__query"><button class="w-100 btn btn-outline-secondary button--red button--rounded" type="button">оплатити комунальні послуги</button></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
