@@ -50,6 +50,9 @@ b, strong
 // button outline reset
 button
 	outline: none
+	background-color: transparent
+	border: 0
+	cursor: pointer
 	&:hover
 		outline: none
 	&:focus
@@ -63,7 +66,6 @@ button
 // @include transition(.2s)
 
 .button
-	cursor: pointer
 	&--red
 		background-color: $attention
 		color: white
@@ -92,6 +94,36 @@ button
 	&--rounded
 		border-radius: 2px
 
+// .hamburger
+.hamburger
+	position: relative
+	width: 40px
+	height: 40px
+	border: 3px solid white
+	border-radius: 40px
+	z-index: 2
+	opacity: 1
+	&:hover
+		opacity: .8
+	&:focus
+		opacity: .8
+
+
+	&__wrapper
+		border: 2px solid white
+		border-radius: 100%
+
+	&__img
+	&__bar
+		display: block
+		width: 22px
+		height: 2px
+		border-radius: 1px
+		background-color: white
+
+
+
+// colors
 .green
 	color: $success
 
@@ -123,7 +155,7 @@ button
 
 // .nav
 .nav
-	height: 60px
+	height: 60px // перед продакшеном вернуть высоту 60px
 	background-color: $accent
 	background-image: url("../img/nav_pattern.png")
 	color: white
