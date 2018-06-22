@@ -10,8 +10,14 @@ $(function() {
     $('.nav-dropdown__content').hide(100)
   });
 
-  $('.nav-dropdown__button').click(function() {
+  $('.js-dropdown-form').click(function() {
   	$('.nav-dropdown__content--form').toggle();
+	});
+
+  // navbar hamburger
+
+    $('.hamburger').click(function() {
+	  	$('.js-navbar').toggleClass('nav-show');
 	});
 
 // accordion
@@ -39,6 +45,7 @@ $(function() {
 				};
 		}
 		var accordion = new Accordion($('.user-readings__container'), false);
+
 
 
 

@@ -50,6 +50,9 @@ b, strong
 // button outline reset
 button
 	outline: none
+	background-color: transparent
+	border: 0
+	cursor: pointer
 	&:hover
 		outline: none
 	&:focus
@@ -63,7 +66,6 @@ button
 // @include transition(.2s)
 
 .button
-	cursor: pointer
 	&--red
 		background-color: $attention
 		color: white
@@ -91,7 +93,42 @@ button
 
 	&--rounded
 		border-radius: 2px
+<<<<<<< HEAD:sass/main.sass
+=======
 
+// .hamburger
+.hamburger
+	position: relative
+	width: 40px
+	height: 40px
+	border: 3px solid white
+	border-radius: 40px
+	z-index: 2
+	opacity: 1
+	&:hover
+		opacity: .8
+	&:focus
+		opacity: .8
+
+
+	&__wrapper
+		border: 2px solid white
+		border-radius: 100%
+
+	&__img
+	&__bar
+		display: block
+		width: 22px
+		height: 2px
+		border-radius: 1px
+		background-color: white
+
+>>>>>>> development:app/sass/main.sass
+
+.green
+	color: $success
+
+// colors
 .green
 	color: $success
 
@@ -123,7 +160,7 @@ button
 
 // .nav
 .nav
-	height: 60px
+	height: 60px // перед продакшеном вернуть высоту 60px
 	background-color: $accent
 	background-image: url("../img/nav_pattern.png")
 	color: white
@@ -134,8 +171,8 @@ button
 	&__content
 		height: 100%
 
+	&__link-wrapper
 	&__item
-
 	&__link
 		height: 100%
 		color: inherit
@@ -165,7 +202,12 @@ button
 			text-align: left
 			text-transform: none
 
+	// mobile nav
+	&__mobile
+		display: none
+
 .nav-dropdown
+	position: relative
 	width: 100%
 
 	&__button
@@ -182,7 +224,6 @@ button
 		right: 0
 		padding-left: 15px
 		padding-right: 15px
-		// background-clip: content-box
 		background-color: $accent
 		box-shadow: 0px 2px 8px fade-out($text, .4)
 		z-index: 4
@@ -202,6 +243,8 @@ button
 
 	&__form-button
 		position: relative
+		display: inline-block
+		width: auto
 		right: 30px
 		background-color: transparent
 		border: none
@@ -322,6 +365,7 @@ button
 	&__description
 
 	&__img
+		height: 120px
 		max-height: 120px
 	&__text
 		line-height: 20px

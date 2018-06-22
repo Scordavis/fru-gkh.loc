@@ -12,10 +12,39 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+<<<<<<< HEAD:sass/_media.sass
+=======
+	// .nav
+	.nav
+		height: 100px
+		&__mobile
+			display: none
+			position: absolute
+			top: 40px
+			background-color: $accent
+			border: 1px solid white
+			z-index: 4
+
+	.nav-show
+		display: block
+
+	.nav-dropdown
+		&__form
+			max-width: 100%
+		&__content
+			position: relative
+			min-width: 100%
+
+
+>>>>>>> development:app/sass/_media.sass
 	// .user-readings
 	.user-readings
 		&__query
 			font-weight: 700
+<<<<<<< HEAD:sass/_media.sass
+=======
+
+>>>>>>> development:app/sass/_media.sass
 	// .footer-page
 	.footer-page
 		height: auto
@@ -24,6 +53,17 @@
 
 // ≥576px
 +media-breakpoint-down(xs)
+
+	.nav-dropdown
+		&__form
+			max-width: 100%
+
+		&__form-button
+			display: block
+			right: 0
+			background-color: fade-out(white, .8)
+			color: white
+			border: 1px solid white
 
 
 /*==========  Mobile First  ==========*/
