@@ -166,8 +166,8 @@ button
 	&__content
 		height: 100%
 
+	&__link-wrapper
 	&__item
-
 	&__link
 		height: 100%
 		color: inherit
@@ -197,7 +197,12 @@ button
 			text-align: left
 			text-transform: none
 
+	// mobile nav
+	&__mobile
+		display: none
+
 .nav-dropdown
+	position: relative
 	width: 100%
 
 	&__button
@@ -214,7 +219,6 @@ button
 		right: 0
 		padding-left: 15px
 		padding-right: 15px
-		// background-clip: content-box
 		background-color: $accent
 		box-shadow: 0px 2px 8px fade-out($text, .4)
 		z-index: 4

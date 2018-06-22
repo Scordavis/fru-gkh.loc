@@ -12,10 +12,31 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+	// .nav
+	.nav
+		height: 100px
+		&__mobile
+			display: none
+			position: absolute
+			top: 40px
+			background-color: $accent
+			border: 1px solid white
+			z-index: 4
+
+	.nav-show
+		display: block
+
+	.nav-dropdown
+		&__content
+			position: relative
+			min-width: 100%
+
+
 	// .user-readings
 	.user-readings
 		&__query
 			font-weight: 700
+
 	// .footer-page
 	.footer-page
 		height: auto

@@ -30,7 +30,7 @@
 		<div class="container nav__wrapper">
 			<div class="row no-gutters align-items-center nav__content">
 				<!-- site nav buttons-->
-				<div class="order-1 order-md-1 d-none d-xs-none d-sm-none d-md-block col-7 col-xl-7 col-lg-6 col-md-4">
+				<div class="order-1 order-md-1 d-none d-md-block col-7 col-xl-7 col-lg-6 col-md-4 nav__link-wrapper">
 					<div class="row no-gutters align-items-center">
 						<!-- nav__item -->
 						<div class="col text-lg-center text-md-right nav__item">
@@ -69,9 +69,67 @@
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
+
+
+
+				<!-- mobile navigation-->
+				<div class="col-8 p-2 nav__mobile js-navbar">
+					<div class="row no-gutters align-items-center">
+						<!-- nav__item -->
+						<div class="col-12 text-lg-center text-md-right nav__item">
+							<a href="#" class="d-md-block reset-link nav__link"><i class="d-md-block d-lg-none d-xl-inline fa fa-home nav__icon"></i><span class="">Головна</span></a>
+						</div>
+						<!-- nav__item dropdown list-->
+						<div class="col text-lg-center text-md-right nav__item">
+							<div class="nav-dropdown js-dropdown">
+								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-md-block d-lg-none d-xl-inline fa fa-file-text-o nav__icon"></i><span class="">Відомості</span></a>
+								<div class="nav-dropdown__content">
+									<a href="#" class="reset-link nav-dropdown__item">Відомості для нарахування</a>
+									<a href="#" class="reset-link nav-dropdown__item">Статистика платежів та споживання</a>
+								</div>
+							</div>
+						</div>
+						<!-- nav__item dropdown list-->
+						<div class="col-12 text-lg-center text-md-right nav__item">
+							<div class="nav-dropdown js-dropdown">
+								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-md-block d-lg-none d-xl-inline fa fa-book nav__icon"></i><span class="">Документи</span></a>
+								<div class="nav-dropdown__content">
+									<a href="#" class="reset-link nav-dropdown__item">Оформити договір</a>
+									<a href="#" class="reset-link nav-dropdown__item">Акт звіряння</a>
+								</div>
+							</div>
+						</div>
+						<!-- nav__item dropdown list-->
+						<div class="col-12 text-lg-center text-md-right nav__item">
+							<div class="reset-link nav-dropdown js-dropdown">
+								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-md-block d-lg-none d-xl-inline fa fa-pencil-square-o nav__icon"></i><span class="">Послуги</span></a>
+								<div class="nav-dropdown__content">
+									<a href="#" class="reset-link nav-dropdown__item">Визвати майстра</a>
+									<a href="#" class="reset-link nav-dropdown__item">Перевірити контролера</a>
+									<a href="#" class="reset-link nav-dropdown__item">Замовити перерахунок</a>
+									<a href="#" class="reset-link nav-dropdown__item">Замовити повірку лічильника</a>
+									<a href="#" class="reset-link nav-dropdown__item">Замовити опломбування лічильника</a>
+								</div>
+							</div>
+						</div>
+						<!-- nav__item dropdown list form-->
+						<div class="order-1 col-12">
+							<div class="nav-dropdown js-dropdown-form">
+								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="fa fa-search nav__icon"></i>Пошук</a>
+								<div class="nav-dropdown__content nav-dropdown__content--form">
+									<form class="form-inline nav-dropdown__item">
+										<input class="nav-dropdown__form form-control" type="search" placeholder="Введіть запит" aria-label="Введіть запит">
+										<button class="nav-dropdown__form-button" type="submit"><i class="fa fa-arrow-circle-right nav__icon"></i></button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
 				<!-- tel, name of organization and search -->
 				<div class="order-2 col-8 col-xl-5 col-lg-6 col-md-8 col-sm-8">
 					<div class="row no-gutters align-items-center">
@@ -89,7 +147,7 @@
 						</div>
 						<!-- nav__item -->
 						<div class="order-2 col-xs-12 col-sm-12 col-md-6 text-right nav__item">
-							<p class="nav__text">КП "Гопри-Водоканал"<span>пн-пт 8:00-17:00</span></p>
+							<p class="nav__text">КП "Гопри-Водоканал"<span class="d-none d-sm-block">пн-пт 8:00-17:00</span></p>
 						</div>
 						<div class="order-3 col-xs-12 col-sm-12 col-md-4 nav__item">
 							<p class="text-left text-md-right nav__text nav__text--tel"><i class="d-none d-md-inline fa fa-phone-square nav__icon"></i>+38(095)123-45-87</p>
@@ -97,9 +155,13 @@
 						</div>
 					</div>
 				</div>
+
+
+
+
 				<!-- hamburger button -->
 				<div class="col-4 order-3 d-block d-md-none col-sm-4 text-right">
-					<button class="hamburger" data-target="#navbar-cabinet" aria-controls="navbar-cabinet">
+					<button class="hamburger"  id="hamburger">
 							<span class="mx-auto my-1 hamburger__bar"></span>
 							<span class="mx-auto my-1 hamburger__bar"></span>
 							<span class="mx-auto my-1 hamburger__bar"></span>
