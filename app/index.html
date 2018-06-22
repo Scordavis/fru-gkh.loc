@@ -29,16 +29,16 @@
 	<div class="col-12 nav">
 		<div class="container nav__wrapper">
 			<div class="row no-gutters align-items-center nav__content">
-				<div class="col-7 col-lg-6">
+				<div class="col-7 col-lg-6 col-md-4">
 					<div class="row no-gutters align-items-center">
 						<!-- nav__item -->
 						<div class="col text-lg-center text-md-right nav__item">
-							<a href="#" class="reset-link nav__link"><i class="d-lg-none d-xl-inline fa fa-home nav__icon"></i>Головна</a>
+							<a href="#" class="d-md-block reset-link nav__link"><i class="d-md-block d-lg-none d-xl-inline fa fa-home nav__icon"></i><span class="d-md-none d-lg-inline">Головна</span></a>
 						</div>
 						<!-- nav__item dropdown list-->
 						<div class="col text-lg-center text-md-right nav__item">
 							<div class="nav-dropdown js-dropdown">
-								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-lg-none d-xl-inline fa fa-file-text-o nav__icon"></i>Відомості</a>
+								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-md-block d-lg-none d-xl-inline fa fa-file-text-o nav__icon"></i><span class="d-md-none d-lg-inline">Відомості</span></a>
 								<div class="nav-dropdown__content">
 									<a href="#" class="reset-link nav-dropdown__item">Відомості для нарахування</a>
 									<a href="#" class="reset-link nav-dropdown__item">Статистика платежів та споживання</a>
@@ -48,7 +48,7 @@
 						<!-- nav__item dropdown list-->
 						<div class="col text-lg-center text-md-right nav__item">
 							<div class="nav-dropdown js-dropdown">
-								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-lg-none d-xl-inline fa fa-book nav__icon"></i>Документи</a>
+								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-md-block d-lg-none d-xl-inline fa fa-book nav__icon"></i><span class="d-md-none d-lg-inline">Документи</span></a>
 								<div class="nav-dropdown__content">
 									<a href="#" class="reset-link nav-dropdown__item">Оформити договір</a>
 									<a href="#" class="reset-link nav-dropdown__item">Акт звіряння</a>
@@ -58,7 +58,7 @@
 						<!-- nav__item dropdown list-->
 						<div class="col text-lg-center text-md-right nav__item">
 							<div class="reset-link nav-dropdown js-dropdown">
-								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-lg-none d-xl-inline fa fa-pencil-square-o nav__icon"></i>Послуги</a>
+								<a href="#" class="reset-link nav__link nav-dropdown__button" data-toggle="dropdown"><i class="d-md-block d-lg-none d-xl-inline fa fa-pencil-square-o nav__icon"></i><span class="d-md-none d-lg-inline">Послуги</span></a>
 								<div class="nav-dropdown__content">
 									<a href="#" class="reset-link nav-dropdown__item">Визвати майстра</a>
 									<a href="#" class="reset-link nav-dropdown__item">Перевірити контролера</a>
@@ -71,7 +71,7 @@
 
 					</div>
 				</div>
-				<div class="col-5 col-lg-6">
+				<div class="col-5 col-lg-6 col-md-8">
 					<div class="row no-gutters align-items-center">
 						<!-- nav__item dropdown list form-->
 						<div class="col-2">
@@ -102,7 +102,7 @@
 		<!-- .header-page -->
 		<div class="row header-page">
 			<!-- breadcrumbs -->
-			<div class="col-5 header-page__item">
+			<div class="order-lg-1 order-md-1 col-lg-5 col-xl-5 col-md-6 header-page__item">
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="#" class="breadcrumb__link">Головна</a></li>
@@ -112,20 +112,20 @@
 				</nav>
 			</div>
 			<!-- calendar day -->
-			<div class="col-3 header-page__item text-center">
+			<div class="order-lg-2 order-md-3 col-lg-3 col-xl-3 col-md-5 header-page__item text-center text-lg-center text-md-left">
 				<p class="header-page__text">Сьогоднi середа, 12.06.2018</p>
 			</div>
 			<!-- user name and logout-->
-			<div class="col-4 header-page__item text-right">
+			<div class="order-lg-3 order-md-2 col-lg-4 col-xl-4 col-md-6 header-page__item text-right">
 				<p class="header-page__text">Перемодлавський Вячеслав Олександрович</p>
 				<a href="#" class="header-page__link">вийти</a>
 			</div>
 		</div>
 		<!-- .cabinet-content -->
-		<div class="row cabinet-content">
+		<div class="row pb-lg-2 pb-md-4 pb-5 cabinet-content">
 			<!-- user-settings -->
-			<div class="col-5 user-settings">
-				<h2 class="cabinet-heading">Відомості <span>про абонента</span></h2>
+			<div class="col-lg-5 user-settings">
+				<h2 class="text-center text-md-left cabinet-heading">Відомості <span>про абонента</span></h2>
 				<p class="text-center user-settings__ballance green">20.35 грн.</p>
 				<form action="">
 					<div class="row no-gutters pt-1 pb-2 user-settings__row">
@@ -154,8 +154,8 @@
 				</form>
 			</div>
 			<!-- user-reading -->
-			<div class="col-7 user-readings">
-				<h2 class="cabinet-heading">Відомості <span>про нарахування</span></h2>
+			<div class="col-lg-7 user-readings">
+				<h2 class="text-center text-md-left cabinet-heading">Відомості <span>про нарахування</span></h2>
 				<!-- .accordion -->
 				<div id="accordion" class="user-readings__container">
 					<!-- .user-readings__item -->
@@ -166,28 +166,28 @@
 							<div class="mx-auto user-readings__wrapper">
 								<!-- table row -->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Діючий тариф</p></div>
-									<div class="col-6 user-readings__value"><p class="user-readings__text">стартовий</p></div>
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Діючий тариф</p></div>
+									<div class="col-md-6 col-12 user-readings__value"><p class="user-readings__text text-md-left text-center">стартовий</p></div>
 								</div>
 								<!-- table row -->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Сплачено в минулому місяці</p></div>
-									<div class="col-6 user-readings__value"><p class="user-readings__text">320 грн. 74 коп.</p></div>
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Сплачено в минулому місяці</p></div>
+									<div class="col-md-6 col-12 user-readings__value"><p class="user-readings__text text-md-left text-center">320 грн. 74 коп.</p></div>
 								</div>
 								<!-- table row -->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Сплачено в поточному місяці</p></div>
-									<div class="col-6 user-readings__value"><p class="user-readings__text">457 грн. 28 коп.</p></div>
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Сплачено в поточному місяці</p></div>
+									<div class="col-md-6 col-12 user-readings__value"><p class="user-readings__text text-md-left text-center">457 грн. 28 коп.</p></div>
 								</div>
 								<!-- table row -->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Останні показники лічильника</p></div>
-									<div class="col-6 user-readings__value"><p class="user-readings__text">45293</p></div>
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Останні показники лічильника</p></div>
+									<div class="col-md-6 col-12 user-readings__value"><p class="user-readings__text text-md-left text-center">45293</p></div>
 								</div>
 								<!-- table row input-->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Внести показання лічильника</p></div>
-									<div class="col-6 user-readings__value">
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Внести показання лічильника</p></div>
+									<div class="col-md-6 col-12 user-readings__value">
 										<div class="input-group">
 											<input type="text" class="form-control user-readings__input" placeholder="внесіть останні показання" aria-label="внесіть останні показання" aria-describedby="user-readings">
 											<div class="input-group-append">
@@ -198,8 +198,8 @@
 								</div>
 								<!-- table row button-->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Сформувати рахунок</p></div>
-									<div class="col-6 user-readings__value">
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Сформувати рахунок</p></div>
+									<div class="col-md-6 col-12 user-readings__value">
 										<div class="input-group">
 											<button class="w-100 btn btn-outline-secondary button--blue button--rounded" type="button">сформувати</button>
 										</div>
@@ -207,12 +207,12 @@
 								</div>
 								<!-- table row ballance-->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Баланс</p></div>
-									<div class="col-6 user-readings__value"><p class="user-readings__text green">20.35 грн.</p></div>
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Баланс</p></div>
+									<div class="col-md-6 col-12 user-readings__value"><p class="user-readings__text text-md-left text-center green">20.35 грн.</p></div>
 								</div>
 								<!-- table row payments-->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="offset-3 col-6 user-readings__query"><button class="w-100 btn btn-outline-secondary button--red button--rounded" type="button">оплатити комунальні послуги</button></div>
+									<div class="offset-0 offset-md-3 col-md-6 col-12 user-readings__query"><button class="w-100 btn btn-outline-secondary button--red button--rounded" type="button">оплатити комунальні послуги</button></div>
 								</div>
 							</div>
 						</div>
@@ -225,28 +225,28 @@
 							<div class="mx-auto user-readings__wrapper">
 								<!-- table row -->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Діючий тариф</p></div>
-									<div class="col-6 user-readings__value"><p class="user-readings__text">корпоративний</p></div>
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Діючий тариф</p></div>
+									<div class="col-md-6 col-12 user-readings__value"><p class="user-readings__text text-md-left text-center">корпоративний</p></div>
 								</div>
 								<!-- table row -->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Сплачено в минулому місяці</p></div>
-									<div class="col-6 user-readings__value"><p class="user-readings__text">320 грн. 74 коп.</p></div>
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Сплачено в минулому місяці</p></div>
+									<div class="col-md-6 col-12 user-readings__value"><p class="user-readings__text text-md-left text-center">320 грн. 74 коп.</p></div>
 								</div>
 								<!-- table row -->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Сплачено в поточному місяці</p></div>
-									<div class="col-6 user-readings__value"><p class="user-readings__text">120 654 грн. 28 коп.</p></div>
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Сплачено в поточному місяці</p></div>
+									<div class="col-md-6 col-12 user-readings__value"><p class="user-readings__text text-md-left text-center">120 654 грн. 28 коп.</p></div>
 								</div>
 								<!-- table row -->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Останні показники лічильника</p></div>
-									<div class="col-6 user-readings__value"><p class="user-readings__text">123293</p></div>
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Останні показники лічильника</p></div>
+									<div class="col-md-6 col-12 user-readings__value"><p class="user-readings__text text-md-left text-center">123293</p></div>
 								</div>
 								<!-- table row input-->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Внести показання лічильника</p></div>
-									<div class="col-6 user-readings__value">
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Внести показання лічильника</p></div>
+									<div class="col-md-6 col-12 user-readings__value">
 										<div class="input-group">
 											<input type="text" class="form-control user-readings__input" placeholder="внесіть останні показання" aria-label="внесіть останні показання" aria-describedby="user-readings">
 											<div class="input-group-append">
@@ -257,8 +257,8 @@
 								</div>
 								<!-- table row button-->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Сформувати рахунок</p></div>
-									<div class="col-6 user-readings__value">
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Сформувати рахунок</p></div>
+									<div class="col-md-6 col-12 user-readings__value">
 										<div class="input-group">
 											<button class="w-100 btn btn-outline-secondary button--blue button--rounded" type="button">сформувати</button>
 										</div>
@@ -266,12 +266,12 @@
 								</div>
 								<!-- table row ballance-->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Баланс</p></div>
-									<div class="col-6 user-readings__value"><p class="user-readings__text green">20.35 грн.</p></div>
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Баланс</p></div>
+									<div class="col-md-6 col-12 user-readings__value"><p class="user-readings__text text-md-left text-center green">20.35 грн.</p></div>
 								</div>
 								<!-- table row payments-->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="offset-3 col-6 user-readings__query"><button class="w-100 btn btn-outline-secondary button--red button--rounded" type="button">оплатити комунальні послуги</button></div>
+									<div class="offset-0 offset-md-3 col-md-6 col-12 user-readings__query"><button class="w-100 btn btn-outline-secondary button--red button--rounded" type="button">оплатити комунальні послуги</button></div>
 								</div>
 							</div>
 						</div>
@@ -284,28 +284,28 @@
 							<div class="mx-auto user-readings__wrapper">
 								<!-- table row -->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Діючий тариф</p></div>
-									<div class="col-6 user-readings__value"><p class="user-readings__text">сімейний</p></div>
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Діючий тариф</p></div>
+									<div class="col-md-6 col-12 user-readings__value"><p class="user-readings__text text-md-left text-center">сімейний</p></div>
 								</div>
 								<!-- table row -->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Сплачено в минулому місяці</p></div>
-									<div class="col-6 user-readings__value"><p class="user-readings__text">10 грн. 74 коп.</p></div>
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Сплачено в минулому місяці</p></div>
+									<div class="col-md-6 col-12 user-readings__value"><p class="user-readings__text text-md-left text-center">10 грн. 74 коп.</p></div>
 								</div>
 								<!-- table row -->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Сплачено в поточному місяці</p></div>
-									<div class="col-6 user-readings__value"><p class="user-readings__text">62 грн. 28 коп.</p></div>
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Сплачено в поточному місяці</p></div>
+									<div class="col-md-6 col-12 user-readings__value"><p class="user-readings__text text-md-left text-center">62 грн. 28 коп.</p></div>
 								</div>
 								<!-- table row -->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Останні показники лічильника</p></div>
-									<div class="col-6 user-readings__value"><p class="user-readings__text">411193</p></div>
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Останні показники лічильника</p></div>
+									<div class="col-md-6 col-12 user-readings__value"><p class="user-readings__text text-md-left text-center">411193</p></div>
 								</div>
 								<!-- table row input-->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Внести показання лічильника</p></div>
-									<div class="col-6 user-readings__value">
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Внести показання лічильника</p></div>
+									<div class="col-md-6 col-12 user-readings__value">
 										<div class="input-group">
 											<input type="text" class="form-control user-readings__input" placeholder="внесіть останні показання" aria-label="внесіть останні показання" aria-describedby="user-readings">
 											<div class="input-group-append">
@@ -316,8 +316,8 @@
 								</div>
 								<!-- table row button-->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Сформувати рахунок</p></div>
-									<div class="col-6 user-readings__value">
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Сформувати рахунок</p></div>
+									<div class="col-md-6 col-12 user-readings__value">
 										<div class="input-group">
 											<button class="w-100 btn btn-outline-secondary button--blue button--rounded" type="button">сформувати</button>
 										</div>
@@ -325,12 +325,12 @@
 								</div>
 								<!-- table row ballance-->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="col-6 user-readings__query"><p class="user-readings__text">Баланс</p></div>
-									<div class="col-6 user-readings__value"><p class="user-readings__text green">20.35 грн.</p></div>
+									<div class="col-md-6 col-12 user-readings__query"><p class="user-readings__text text-md-left text-center">Баланс</p></div>
+									<div class="col-md-6 col-12 user-readings__value"><p class="user-readings__text text-md-left text-center green">20.35 грн.</p></div>
 								</div>
 								<!-- table row payments-->
 								<div class="row no-gutters pt-2 px-2 user-readings__row">
-									<div class="offset-3 col-6 user-readings__query"><button class="w-100 btn btn-outline-secondary button--red button--rounded" type="button">оплатити комунальні послуги</button></div>
+									<div class="offset-0 offset-md-3 col-md-6 col-12 user-readings__query"><button class="w-100 btn btn-outline-secondary button--red button--rounded" type="button">оплатити комунальні послуги</button></div>
 								</div>
 							</div>
 						</div>
@@ -341,17 +341,17 @@
 		</div>
 		<!-- .callback -->
 		<div class="row callback">
-			<h2 class="col-12 cabinet-heading">Зворотній <span>зв'язок</span></h2>
+			<h2 class="col-12 text-center text-md-left cabinet-heading">Зворотній <span>зв'язок</span></h2>
 			<!-- description -->
-			<div class="col-5 callback__description">
+			<div class="col-lg-5 pb-2 callback__description">
 				<div class="row align-items-start">
-					<img src="img/support-woman.svg" alt="" class="col-3 callback__img">
-					<p class="col-9 callback__text">Тут ви можете залишити заявку, висловити свою думку, відправити запит. Просто заповніть форму та натисніть "Відправити". Наші фахівці розглянуть вашу заявку і зв'яжуться з Вами.</p>
+					<img src="img/support-woman.svg" alt="" class="col-md-3 d-md-inline d-sm-none callback__img">
+					<p class="col-12 col-md-9 callback__text text-center text-md-left">Тут ви можете залишити заявку, висловити свою думку, відправити запит. Просто заповніть форму та натисніть "Відправити". Наші фахівці розглянуть вашу заявку і зв'яжуться з Вами.</p>
 				</div>
 			</div>
 			<!-- .callback-form -->
-			<form action="" class="col-7 callback__form">
-				<div class="row justify-content-end ">
+			<form action="" class="col-lg-7 callback__form">
+				<div class="row justify-content-md-end justify-content-center">
 					<textarea class="col-12 form-control callback__textarea" id="callback__textarea" rows="4" placeholder="почніть вводити текст тут"></textarea>
 					<button type="submit" class="px-3 button button--red">вiдправити</button>
 				</div>
@@ -360,19 +360,19 @@
 	</div>
 	<div class="container-fluid footer-page">
 		<div class="container">
-			<div class="row align-items-center footer-page__wrapper">
+			<div class="row py-4 align-items-center footer-page__wrapper">
 				<!-- footer-page__item -->
-				<div class="col-4 text-left footer-page__item">
+				<div class="col-md-4 text-center text-md-left footer-page__item">
 					<p class="footer-page__text footer-page__text--uppercase">кп "Гопри-Водоканал" ©2018 <span class="footer-page__text">пн-пт 8:00-17:00</span></p>
 					<p class="footer-page__text">+38(095)123-45-87<br>+38(095)876-54-32</p>
 				</div>
 				<!-- footer-page__item -->
-				<div class="col-4 text-center footer-page__item">
+				<div class="col-md-4 text-center text-md-center footer-page__item">
 					<p class="footer-page__text footer-page__text--uppercase">кп "Гопри-Водоканал" ©2018 <span class="footer-page__text">пн-пт 8:00-17:00</span></p>
 					<p class="footer-page__text">+38(095)123-45-87<br>+38(095)876-54-32</p>
 				</div>
 				<!-- footer-page__item -->
-				<div class="col-4 text-right footer-page__item">
+				<div class="col-md-4 text-center text-md-right footer-page__item">
 					<p class="footer-page__text footer-page__text--uppercase">кп "Гопри-Водоканал" ©2018 <span class="footer-page__text">пн-пт 8:00-17:00</span></p>
 					<p class="footer-page__text">+38(095)123-45-87<br>+38(095)876-54-32</p>
 				</div>
